@@ -1,0 +1,67 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.svideo.common.test" >
+4
+5    <uses-sdk
+5-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:5:15-41
+7        android:targetSdkVersion="28" />
+7-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:5:42-71
+8
+9    <instrumentation
+9-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:11:5-15:79
+10        android:name="android.test.InstrumentationTestRunner"
+10-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:11:22-75
+11        android:functionalTest="false"
+11-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:14:22-52
+12        android:handleProfiling="false"
+12-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:13:22-53
+13        android:label="Tests for com.aliyun.svideo.common.test"
+13-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:15:22-77
+14        android:targetPackage="com.aliyun.svideo.common.test" />
+14-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:12:22-75
+15    <!-- 网络/网络状态 -->
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:5-79
+16-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:9:22-76
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:5-67
+17-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:10:22-64
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-76
+18-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-73
+19    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- Sdcard读写权限 -->
+19-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-76
+19-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-73
+20    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+20-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-81
+20-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-78
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 摄像头录音权限 -->
+21-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-80
+21-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-77
+22    <uses-permission android:name="android.permission.CAMERA" />
+22-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-65
+22-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-62
+23    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 电话状态权限 -->
+23-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-71
+23-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:22-68
+24    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 蓝牙权限 -->
+24-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:5-75
+24-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:22-72
+25    <uses-permission android:name="android.permission.BLUETOOTH" />
+25-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-68
+25-->[__tested_artifact__::AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-65
+26
+27    <application
+27-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:7:5-9:19
+28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+28-->[androidx.core:core:1.0.0] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\d7e5a5242469a4908784bec1f3081f1b\core-1.0.0\AndroidManifest.xml:22:18-86
+29        android:debuggable="true" >
+29-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:7:18-43
+30        <uses-library android:name="android.test.runner" />
+30-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:8:9-60
+30-->E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger9389447272149779815.xml:8:23-57
+31    </application>
+32
+33</manifest>

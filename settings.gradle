@@ -1,0 +1,2 @@
+include ':app', ':zxing', ':Aliyunplayer:AlivcPlayer', ':Aliyunplayer:player_demo', ':AliyunVideoCommon'
+rootProject.name='myVoiceApp'

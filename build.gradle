@@ -1,0 +1,31 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        //mavenLocal()   //配置先从本地仓库寻找jar包，优先寻找上一个配置，找到不执行下面的配置
+        //mavenCentral()
+        maven {url 'http://maven.aliyun.com/nexus/content/groups/public/'}
+        maven { url 'https://www.jitpack.io' }
+    }
+    apply from: 'thirdparty-lib/config.gradle'
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.5.0'
+        classpath "com.google.protobuf:protobuf-gradle-plugin:0.8.8"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        flatDir { dirs 'src/main/libs' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

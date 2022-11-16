@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.convertContext";
+option java_outer_classname = "ConvertContextProto";
+
+package convertContext;
+
+service UserService {
+  rpc getConvert (ConvertRequest) returns (ConvertReply) {}
+}
+
+message ConvertRequest {
+  string sendtext = 1;
+}
+
+message ConvertReply {
+  string answer = 1;
+}

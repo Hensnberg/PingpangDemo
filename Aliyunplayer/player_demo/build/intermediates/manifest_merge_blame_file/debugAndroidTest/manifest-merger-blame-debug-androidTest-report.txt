@@ -1,0 +1,209 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.vodplayer.test" >
+4
+5    <uses-sdk
+5-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:5:5-74
+6        android:minSdkVersion="16"
+6-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:5:15-41
+7        android:targetSdkVersion="28" />
+7-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:5:42-71
+8
+9    <instrumentation
+9-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:11:5-15:75
+10        android:name="androidx.test.runner.AndroidJUnitRunner"
+10-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:11:22-76
+11        android:functionalTest="false"
+11-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:14:22-52
+12        android:handleProfiling="false"
+12-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:13:22-53
+13        android:label="Tests for com.aliyun.vodplayer.test"
+13-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:15:22-73
+14        android:targetPackage="com.aliyun.vodplayer.test" />
+14-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:12:22-71
+15
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:5-79
+16-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-76
+17-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-73
+18    <uses-permission android:name="android.permission.INTERNET" />
+18-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-67
+18-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-64
+19    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+19-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-81
+19-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:22-78
+20    <uses-permission android:name="android.permission.WAKE_LOCK" />
+20-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:5-68
+20-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:22-65
+21    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+21-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:5-75
+21-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:16:22-72
+22    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+22-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-73
+22-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-70
+23    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+23-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-80
+23-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:22-77
+24    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- 网络权限 -->
+24-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-86
+24-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:22-83
+25    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 震动权限 -->
+25-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-66
+25-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-63
+26    <uses-permission android:name="android.permission.CAMERA" /> <!-- 摄像头权限 -->
+26-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-65
+26-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:22-62
+27    <uses-feature android:name="android.hardware.camera.autofocus" />
+27-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:5-70
+27-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:19-67
+28
+29    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+29-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-76
+29-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:22-73
+30    <uses-permission android:name="android.permission.RECORD_AUDIO" /> <!-- 蓝牙权限 -->
+30-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:5-71
+30-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:18:22-68
+31    <uses-permission android:name="android.permission.BLUETOOTH" />
+31-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-68
+31-->[:AliyunVideoCommon] E:\123\myVoiceApp\AliyunVideoCommon\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:22-65
+32
+33    <application
+33-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:7:5-9:19
+34        android:allowBackup="true"
+34-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.0.0] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\d7e5a5242469a4908784bec1f3081f1b\core-1.0.0\AndroidManifest.xml:22:18-86
+36        android:debuggable="true"
+36-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:7:18-43
+37        android:label="@string/app_name"
+37-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:9-41
+38        android:supportsRtl="true"
+38-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-35
+39        android:theme="@style/AppTheme" >
+39-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-40
+40        <uses-library android:name="android.test.runner" />
+40-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:8:9-60
+40-->E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\tmp\manifest\androidTest\debug\manifestMerger15110305102939623383.xml:8:23-57
+41
+42        <activity
+42-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-28:20
+43            android:name="com.aliyun.vodplayerview.activity.AliyunPlayerSettingActivity"
+43-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:13-89
+44            android:configChanges="orientation|keyboardHidden|screenSize"
+44-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:13-74
+45            android:screenOrientation="portrait" >
+45-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:13-49
+46        </activity>
+47        <activity
+47-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-34:20
+48            android:name="com.aliyun.vodplayerview.activity.AliyunPlayerSkinActivity"
+48-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:13-86
+49            android:configChanges="orientation|keyboardHidden|screenSize"
+49-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:31:13-74
+50            android:screenOrientation="portrait"
+50-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:13-49
+51            android:theme="@style/Theme.AppCompat.NoActionBar" >
+51-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:13-63
+52        </activity>
+53
+54        <service
+54-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:9-38:40
+55            android:name="com.aliyun.vodplayerview.view.dlna.service.ClingUpnpService"
+55-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-87
+56            android:exported="false" />
+56-->[__tested_artifact__::Aliyunplayer:player_demo] E:\123\myVoiceApp\Aliyunplayer\player_demo\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-37
+57
+58        <activity
+58-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:9-24:66
+59            android:name="com.google.zxing.activity.CaptureActivity"
+59-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:13-69
+60            android:theme="@style/Theme.AppCompat.NoActionBar" />
+60-->[:zxing] E:\123\myVoiceApp\zxing\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:13-63
+61
+62        <service
+62-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:27:9-30:45
+63            android:name="com.squareup.leakcanary.internal.HeapAnalyzerService"
+63-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:28:13-80
+64            android:enabled="false"
+64-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:29:13-36
+65            android:process=":leakcanary" />
+65-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:30:13-42
+66        <service
+66-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:31:9-34:45
+67            android:name="com.squareup.leakcanary.DisplayLeakService"
+67-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:32:13-70
+68            android:enabled="false"
+68-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:33:13-36
+69            android:process=":leakcanary" />
+69-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:34:13-42
+70
+71        <provider
+71-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:36:9-44:20
+72            android:name="com.squareup.leakcanary.internal.LeakCanaryFileProvider"
+72-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:37:13-83
+73            android:authorities="com.squareup.leakcanary.fileprovider.com.aliyun.vodplayer.test"
+73-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:38:13-88
+74            android:exported="false"
+74-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:39:13-37
+75            android:grantUriPermissions="true" >
+75-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:40:13-47
+76            <meta-data
+76-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:41:13-43:66
+77                android:name="android.support.FILE_PROVIDER_PATHS"
+77-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:42:17-67
+78                android:resource="@xml/leak_canary_file_paths" />
+78-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:43:17-63
+79        </provider>
+80
+81        <activity
+81-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:46:9-59:20
+82            android:name="com.squareup.leakcanary.internal.DisplayLeakActivity"
+82-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:47:13-80
+83            android:enabled="false"
+83-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:48:13-36
+84            android:icon="@mipmap/leak_canary_icon"
+84-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:49:13-52
+85            android:label="@string/leak_canary_display_activity_label"
+85-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:50:13-71
+86            android:process=":leakcanary"
+86-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:51:13-42
+87            android:taskAffinity="com.squareup.leakcanary.com.aliyun.vodplayer.test"
+87-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:52:13-76
+88            android:theme="@style/leak_canary_LeakCanary.Base" >
+88-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:53:13-63
+89            <intent-filter>
+89-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:54:13-58:29
+90                <action android:name="android.intent.action.MAIN" />
+90-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:55:17-69
+90-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:55:25-66
+91
+92                <category android:name="android.intent.category.LAUNCHER" />
+92-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:57:17-77
+92-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:57:27-74
+93            </intent-filter>
+94        </activity>
+95        <activity
+95-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:60:9-69:68
+96            android:name="com.squareup.leakcanary.internal.RequestStoragePermissionActivity"
+96-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:61:13-93
+97            android:enabled="false"
+97-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:62:13-36
+98            android:excludeFromRecents="true"
+98-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:63:13-46
+99            android:icon="@mipmap/leak_canary_icon"
+99-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:64:13-52
+100            android:label="@string/leak_canary_storage_permission_activity_label"
+100-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:65:13-82
+101            android:process=":leakcanary"
+101-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:66:13-42
+102            android:roundIcon="@mipmap/leak_canary_icon"
+102-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:67:13-57
+103            android:taskAffinity="com.squareup.leakcanary.com.aliyun.vodplayer.test"
+103-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:68:13-76
+104            android:theme="@style/leak_canary_Theme.Transparent" />
+104-->[com.squareup.leakcanary:leakcanary-android:1.6.1] D:\program\java1.8\gradle-7.5\init.d\caches\transforms-2\files-2.1\61319f7cbe3be2455bd2487bfdc9c135\jetified-leakcanary-android-1.6.1\AndroidManifest.xml:69:13-65
+105    </application>
+106
+107</manifest>

@@ -1,0 +1,129 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.protobuf' //引用protobuf-gradle-plugin插件
+
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.iflytek.mscv5plusdemo"
+        minSdkVersion 16
+        targetSdkVersion 30
+        multiDexEnabled true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    compileOptions{
+        sourceCompatibility='1.8'
+        targetCompatibility='1.8'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+            proto {
+                srcDir 'src/main/proto'
+            }
+        }
+    }
+    packagingOptions {
+        pickFirst 'META-INF/INDEX.LIST'
+        pickFirst 'META-INF/INDEX.LIST'
+        pickFirst 'META-INF/io.netty.versions.properties'
+        pickFirst 'META-INF/legal/**'
+        exclude '**/*.jks'
+    }
+}
+allprojects {
+    repositories {
+        maven { url 'https://www.jitpack.io' }
+    }
+}
+protobuf {
+    protoc {
+        artifact = "com.google.protobuf:protoc:3.17.0"
+    }
+    plugins {
+        //javalite { artifact = "com.google.protobuf:protoc-gen-javalite:3.0.0" }
+        grpc {
+            artifact = 'io.grpc:protoc-gen-grpc-java:1.27.0'
+        }
+    }
+    generateProtoTasks {
+        all().each {
+            task ->
+                task.plugins {
+//                    javalite {}
+                    grpc {
+                        // Options added to --grpc_out
+                        option 'lite'
+                    }
+                }
+                task.builtins {
+                    remove java
+                }
+                task.builtins {
+                    java {}
+                    // Add cpp output without any option.
+                    // DO NOT omit the braces if you want this builtin to be added.
+//                    cpp {}
+                }
+        }
+        all()*.plugins { grpc {} }
+    }
+    generatedFilesBaseDir = "$projectDir/src/generated"
+    generateProtoTasks {
+        all()*.plugins {
+            grpc{
+                setOutputSubDir 'java'
+            }
+        }
+    }
+}
+
+dependencies {
+    //implementation files('libs/Msc.jar')
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation project(':Aliyunplayer:player_demo')
+    implementation project(':Aliyunplayer:AlivcPlayer')
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.4.0'
+    //implementation 'com.android.support:multidex:1.0.3'
+
+
+//    implementation 'com.jakewharton:butterknife:8.8.1'
+//    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+//    implementation 'io.grpc:grpc-okhttp:1.27.0'
+    implementation 'io.grpc:grpc-protobuf:1.27.0'
+    implementation 'io.grpc:grpc-stub:1.27.0'
+//
+//    implementation 'com.google.protobuf:protobuf-java:3.11.0'
+//    implementation 'com.google.code.findbugs:jsr305:3.0.0'
+//    implementation 'com.google.guava:guava:20.0'
+//    implementation 'javax.annotation:javax.annotation-api:1.2'
+
+    //implementation 'io.grpc:grpc-okhttp:1.27.0'
+//    implementation 'io.grpc:grpc-protobuf:1.42.0'
+//    implementation 'io.grpc:grpc-stub:1.42.0'
+//
+    implementation 'io.grpc:grpc-netty:1.42.0' // CURRENT_GRPC_VERSION
+////    implementation 'io.grpc:grpc-protobuf:1.42.0' // CURRENT_GRPC_VERSION
+////    implementation 'io.grpc:grpc-stub:1.42.0' // CURRENT_GRPC_VERSION
+//    implementation 'org.apache.tomcat:annotations-api:6.0.53'
+
+
+
+    implementation 'com.google.protobuf:protobuf-java:3.17.0'
+
+//    implementation 'com.google.code.findbugs:jsr305:3.0.0'
+//    implementation 'com.google.guava:guava:20.0'
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+}

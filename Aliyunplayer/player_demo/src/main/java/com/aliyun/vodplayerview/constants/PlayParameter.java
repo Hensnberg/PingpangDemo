@@ -22,14 +22,14 @@ public class PlayParameter {
     /**
      * vid
      */
-    public static String PLAY_PARAM_VID = "";
+    public static String PLAY_PARAM_VID = "c23cac4f169648f2b77fd587478ad091";
 
     public static String PLAY_PARAM_REGION = "cn-shanghai";
 
     /**
      * url类型的播放地址, 初始为:http://player.alicdn.com/video/aliyunmedia.mp4
      */
-    public static String PLAY_PARAM_URL = "http://player.alicdn.com/video/aliyunmedia.mp4";
+    public static String PLAY_PARAM_URL = "https://outin-8649ec7f276e11ecaa6300163e00b174.oss-cn-shanghai.aliyuncs.com/sv/355ec15d-1845764c25c/355ec15d-1845764c25c.mp4?Expires=1669091040&OSSAccessKeyId=LTAI8bKSZ6dKjf44&Signature=OjDCPqVVNBBHHC%2Fw%2FOJDS7kzyi0%3D";
 
 
     /**

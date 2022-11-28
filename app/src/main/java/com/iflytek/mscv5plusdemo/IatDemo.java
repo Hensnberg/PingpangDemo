@@ -13,17 +13,9 @@ import android.view.Window;
 import android.widget.*;
 import com.aliyun.player.IPlayer;
 import com.aliyun.player.nativeclass.PlayerConfig;
-import com.aliyun.player.source.VidAuth;
+import com.aliyun.player.source.UrlSource;
 import com.aliyun.vodplayerview.constants.PlayParameter;
 import com.aliyun.vodplayerview.widget.AliyunVodPlayerView;
-import com.aliyuncs.DefaultAcsClient;
-import com.aliyuncs.IAcsClient;
-import com.aliyuncs.exceptions.ClientException;
-import com.aliyuncs.exceptions.ServerException;
-import com.aliyuncs.profile.DefaultProfile;
-import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthRequest;
-import com.aliyuncs.vod.model.v20170321.GetVideoPlayAuthResponse;
-import com.google.gson.Gson;
 import com.iflytek.cloud.*;
 import com.iflytek.cloud.ui.RecognizerDialog;
 import com.iflytek.cloud.ui.RecognizerDialogListener;
@@ -87,7 +79,7 @@ public class IatDemo extends Activity implements OnClickListener {
 
 
         initAliyunPlayerView();
-        playVideo();//播放视频
+        //playVideo();//播放视频
 
         initEvent();
 
@@ -192,17 +184,22 @@ public class IatDemo extends Activity implements OnClickListener {
                 return;
             }
             System.out.println(text);
+            //text="比赛中发完小三角得球后续怎么处理 ";
             String res = new MainActivity().startClient(HOST, PROT, text);
-            mResultText_answer.append(res);
-            mResultText_answer.setSelection(mResultText.length());
+            if(res.contains("https")){
+                playVideo(res);
+            }else {
+                mResultText_answer.append(res);
+                mResultText_answer.setSelection(mResultText.length());
 
-            // 设置参数
-            setTTSParam();
-            Log.d(TAG, "准备点击： " + System.currentTimeMillis());
-            int code = mTts.startSpeaking(res, mTtsListener);
+                // 设置参数
+                setTTSParam();
+                Log.d(TAG, "准备点击： " + System.currentTimeMillis());
+                int code = mTts.startSpeaking(res, mTtsListener);
 
-            if (code != ErrorCode.SUCCESS) {
-                showTip("语音合成失败,错误码: " + code + ",请点击网址https://www.xfyun.cn/document/error-code查询解决方案");
+                if (code != ErrorCode.SUCCESS) {
+                    showTip("语音合成失败,错误码: " + code + ",请点击网址https://www.xfyun.cn/document/error-code查询解决方案");
+                }
             }
 
         }
@@ -440,14 +437,26 @@ public class IatDemo extends Activity implements OnClickListener {
 
     }
 
-    private void playVideo() {
+    private void playVideo(String url) {
 
 
-//        UrlSource urlSource = new UrlSource();
-//        urlSource.setCoverPath("http://image.test.laodao.so/image/course/course/5cf047c0-ba7d-11e9-b949-23e7199f12a0.jpg");
-//        urlSource.setTitle("小窗口视频测试");
-//        urlSource.setUri(PlayParameter.PLAY_PARAM_URL);
-//
+        UrlSource urlSource = new UrlSource();
+        urlSource.setCoverPath("http://image.test.laodao.so/image/course/course/5cf047c0-ba7d-11e9-b949-23e7199f12a0.jpg");
+        urlSource.setTitle("小窗口视频测试");
+        urlSource.setUri(url);
+
+        PlayerConfig playerConfig = mAliyunVodPlayerView.getPlayerConfig();
+        //默认是5000
+        int maxDelayTime = 5000;
+        if (PlayParameter.PLAY_PARAM_URL.startsWith("artp")) {
+            //如果url的开头是artp，将直播延迟设置成100，
+            maxDelayTime = 100;
+        }
+        playerConfig.mMaxDelayTime = maxDelayTime;
+        mAliyunVodPlayerView.setPlayerConfig(playerConfig);
+        mAliyunVodPlayerView.setLocalSource(urlSource);
+
+
 //        PlayerConfig playerConfig = mAliyunVodPlayerView.getPlayerConfig();
 //        //默认是5000
 //        int maxDelayTime = 5000;
@@ -460,62 +469,50 @@ public class IatDemo extends Activity implements OnClickListener {
 //        mAliyunVodPlayerView.setLocalSource(urlSource);
 
 
-        PlayerConfig playerConfig = mAliyunVodPlayerView.getPlayerConfig();
-        //默认是5000
-        int maxDelayTime = 5000;
-//        if (PlayParameter.PLAY_PARAM_URL.startsWith("artp")) {
-//            //如果url的开头是artp，将直播延迟设置成100，
-//            maxDelayTime = 100;
+//        VidAuth vidAuth = new VidAuth();
+//        vidAuth.setVid(PlayParameter.PLAY_PARAM_VID);
+//        vidAuth.setRegion(PlayParameter.PLAY_PARAM_REGION);
+//        String palyauth=getVideoPlayAuth(PlayParameter.PLAY_PARAM_VID);
+//        vidAuth.setPlayAuth(palyauth);
+//        //vidAuth.setTitle(PlayParameter.PLAY_PARAM_TYPE_AUTH_TITLE);
+//        //vidAuth.setCoverPath(PlayParameter.PLAY_PARAM_TYPE_AUTH_COVER_PATH);
+//
+//        mAliyunVodPlayerView.setAuthInfo(vidAuth);
+    }
+
+//    private String getVideoPlayAuth(String vid){
+//        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai",
+//                "LTAI5tMGNRYqdKw8RKKLQuBX",
+//                "jkIaHmcoEOdc9eueWFiEq5uUjbvjOi");
+//        /** use STS Token
+//         DefaultProfile profile = DefaultProfile.getProfile(
+//         "<your-region-id>",           // The region ID
+//         "<your-access-key-id>",       // The AccessKey ID of the RAM account
+//         "<your-access-key-secret>",   // The AccessKey Secret of the RAM account
+//         "<your-sts-token>");          // STS Token
+//         **/
+//
+//        IAcsClient client = new DefaultAcsClient(profile);
+//
+//
+//        GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
+//        request.setVideoId(vid);
+//        request.setAuthInfoTimeout((long)3000);
+//
+//        try {
+//            GetVideoPlayAuthResponse response = client.getAcsResponse(request);
+//            String playAuth = response.getPlayAuth();
+//            System.out.println(new Gson().toJson(response));
+//            return playAuth;
+//        } catch (ServerException e) {
+//            e.printStackTrace();
+//        } catch (ClientException e) {
+//            System.out.println("ErrCode:" + e.getErrCode());
+//            System.out.println("ErrMsg:" + e.getErrMsg());
+//            System.out.println("RequestId:" + e.getRequestId());
 //        }
-        playerConfig.mMaxDelayTime = maxDelayTime;
-
-//        mAliyunVodPlayerView.setLocalSource(urlSource);
-
-
-        VidAuth vidAuth = new VidAuth();
-        vidAuth.setVid(PlayParameter.PLAY_PARAM_VID);
-        vidAuth.setRegion(PlayParameter.PLAY_PARAM_REGION);
-        String palyauth=getVideoPlayAuth(PlayParameter.PLAY_PARAM_VID);
-        vidAuth.setPlayAuth(palyauth);
-        //vidAuth.setTitle(PlayParameter.PLAY_PARAM_TYPE_AUTH_TITLE);
-        //vidAuth.setCoverPath(PlayParameter.PLAY_PARAM_TYPE_AUTH_COVER_PATH);
-        mAliyunVodPlayerView.setPlayerConfig(playerConfig);
-        mAliyunVodPlayerView.setAuthInfo(vidAuth);
-    }
-
-    private String getVideoPlayAuth(String vid){
-        DefaultProfile profile = DefaultProfile.getProfile("cn-shanghai",
-                "LTAI5tMGNRYqdKw8RKKLQuBX",
-                "jkIaHmcoEOdc9eueWFiEq5uUjbvjOi");
-        /** use STS Token
-         DefaultProfile profile = DefaultProfile.getProfile(
-         "<your-region-id>",           // The region ID
-         "<your-access-key-id>",       // The AccessKey ID of the RAM account
-         "<your-access-key-secret>",   // The AccessKey Secret of the RAM account
-         "<your-sts-token>");          // STS Token
-         **/
-
-        IAcsClient client = new DefaultAcsClient(profile);
-
-
-        GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
-        request.setVideoId(vid);
-        request.setAuthInfoTimeout((long)3000);
-
-        try {
-            GetVideoPlayAuthResponse response = client.getAcsResponse(request);
-            String playAuth = response.getPlayAuth();
-            System.out.println(new Gson().toJson(response));
-            return playAuth;
-        } catch (ServerException e) {
-            e.printStackTrace();
-        } catch (ClientException e) {
-            System.out.println("ErrCode:" + e.getErrCode());
-            System.out.println("ErrMsg:" + e.getErrMsg());
-            System.out.println("RequestId:" + e.getRequestId());
-        }
-        return null;
-    }
+//        return null;
+//    }
 
     private void initAliyunPlayerView() {
 
